@@ -27,7 +27,7 @@ df$Global_active_power <- as.numeric(df$Global_active_power)
 #-------------------------------------------------------------------------------#
 png(filename='plot2.png')
 
-# Make plot
+# plot the graph
 plot(df$date.time, df$Global_active_power, ylab='Global Active Power (kilowatts)', xlab='', type='l')
 
 # Turn off device

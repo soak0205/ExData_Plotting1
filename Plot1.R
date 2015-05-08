@@ -24,12 +24,12 @@ df$Time <- hms(df$Time)
 df$date.time <- df$Date + df$Time
 df$Global_active_power <- as.numeric(df$Global_active_power)
 #-------------------------------------------------------------------------------#
-# Open png device
+# open png device with the right file name
 png(filename='plot1.png')
 
-# Make plot
+# Plot the data
 hist(df$Global_active_power, main='Global Active Power', xlab='Global Active Power (kilowatts)', col='red')
 
-# Turn off device
+# turn off
 dev.off()
 #-------------------------------------------------------------------------------#
